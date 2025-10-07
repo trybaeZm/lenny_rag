@@ -2,24 +2,33 @@ options:
   logging: CLOUD_LOGGING_ONLY
 
 steps:
-  # 1. Install dependencies
-  - name: 'python:3.11'
-    id: 'Install dependencies'
-    entrypoint: 'pip'
-    args:
-      - 'install'
-      - '-r'
-      - 'requirements.txt'
+  # 1. Build Docker image
+  - name: 'gcr.io/cloud-builders/docker'
+    args: [
+      'build',
+      '-t',
+      'europe-west4-docker.pkg.dev/trybae-457418/ai-repo/ai-service:latest',
+      '.'
+    ]
 
-  # 2. Deploy to Cloud Run
+  # 2. Push Docker image
+  - name: 'gcr.io/cloud-builders/docker'
+    args: [
+      'push',
+      'europe-west4-docker.pkg.dev/trybae-457418/ai-repo/ai-service:latest'
+    ]
+
+  # 3. Deploy to Cloud Run
   - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
-    id: 'Deploy to Cloud Run'
     entrypoint: 'bash'
     args:
       - '-c'
       - |
         gcloud run deploy ai-service \
+          --image europe-west4-docker.pkg.dev/trybae-457418/ai-repo/ai-service:latest \
           --platform managed \
           --region europe-west4 \
-          --allow-unauthenticated \
-          --source .
+          --allow-unauthenticated
+
+images:
+  - 'europe-west4-docker.pkg.dev/trybae-457418/ai-repo/ai-service:latest'
