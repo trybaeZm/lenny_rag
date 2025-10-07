@@ -7,7 +7,7 @@ steps:
     args: [
       'build',
       '-t',
-      'europe-west4-docker.pkg.dev/trybae-457418/ai-repo/ai-service:latest',
+      'image europe-west4-docker.pkg.dev/trybae-457418/cloud-run-source-deploy/ai-service:latest',
       '.'
     ]
 
@@ -15,7 +15,7 @@ steps:
   - name: 'gcr.io/cloud-builders/docker'
     args: [
       'push',
-      'europe-west4-docker.pkg.dev/trybae-457418/ai-repo/ai-service:latest'
+      'image europe-west4-docker.pkg.dev/trybae-457418/cloud-run-source-deploy/ai-service:latest'
     ]
 
   # 3. Deploy to Cloud Run
@@ -25,7 +25,7 @@ steps:
       - '-c'
       - |
         gcloud run deploy ai-service \
-          --image europe-west4-docker.pkg.dev/trybae-457418/ai-repo/ai-service:latest \
+          --image europe-west4-docker.pkg.dev/trybae-457418/cloud-run-source-deploy/ai-service:latest \
           --platform managed \
           --region europe-west4 \
           --allow-unauthenticated
