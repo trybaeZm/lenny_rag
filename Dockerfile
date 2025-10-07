@@ -13,4 +13,4 @@ COPY . .
 EXPOSE 8080
 
 # Start the app using the PORT environment variable
-CMD ["python", "-m", "uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8080"]
+CMD ["python", "run.py"]
