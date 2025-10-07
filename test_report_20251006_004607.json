@@ -1,0 +1,181 @@
+{
+  "timestamp": "20251006_004607",
+  "summary": {
+    "total_tests": 9,
+    "passed": 0,
+    "failed": 9,
+    "pass_rate": 0.0,
+    "avg_response_time": 4.490309874216716,
+    "avg_keyword_match": 0.1111111111111111
+  },
+  "category_results": {
+    "Business Metrics": {
+      "passed": 0,
+      "total": 2,
+      "time": [
+        6.140559911727905,
+        4.472538948059082
+      ]
+    },
+    "Forecasting": {
+      "passed": 0,
+      "total": 1,
+      "time": [
+        4.367439031600952
+      ]
+    },
+    "Customer Behavior": {
+      "passed": 0,
+      "total": 2,
+      "time": [
+        4.29455828666687,
+        4.182395935058594
+      ]
+    },
+    "Product Analysis": {
+      "passed": 0,
+      "total": 1,
+      "time": [
+        4.2389795780181885
+      ]
+    },
+    "Geographic Analysis": {
+      "passed": 0,
+      "total": 1,
+      "time": [
+        4.244129657745361
+      ]
+    },
+    "Out of Scope": {
+      "passed": 0,
+      "total": 1,
+      "time": [
+        4.241003513336182
+      ]
+    },
+    "Vague Query": {
+      "passed": 0,
+      "total": 1,
+      "time": [
+        4.231184005737305
+      ]
+    }
+  },
+  "test_results": [
+    {
+      "query": "What are my total sales?",
+      "category": "Business Metrics",
+      "success": false,
+      "time": 6.140559911727905,
+      "answer": "\ud83e\udd16 AI service temporarily unavailable. Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************VKMA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+      "keyword_match_rate": 0.0,
+      "retrieved_context": true
+    },
+    {
+      "query": "How many customers do I have?",
+      "category": "Business Metrics",
+      "success": false,
+      "time": 4.472538948059082,
+      "answer": "\ud83e\udd16 AI service temporarily unavailable. Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************VKMA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+      "keyword_match_rate": 0.0,
+      "retrieved_context": true
+    },
+    {
+      "query": "Show me revenue forecast for next month",
+      "category": "Forecasting",
+      "success": false,
+      "time": 4.367439031600952,
+      "answer": "\ud83e\udd16 AI service temporarily unavailable. Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************VKMA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+      "keyword_match_rate": 0.0,
+      "retrieved_context": true
+    },
+    {
+      "query": "What are the peak business hours?",
+      "category": "Customer Behavior",
+      "success": false,
+      "time": 4.29455828666687,
+      "answer": "\ud83e\udd16 AI service temporarily unavailable. Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************VKMA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+      "keyword_match_rate": 0.0,
+      "retrieved_context": true
+    },
+    {
+      "query": "Tell me about customer behavior patterns",
+      "category": "Customer Behavior",
+      "success": false,
+      "time": 4.182395935058594,
+      "answer": "\ud83e\udd16 AI service temporarily unavailable. Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************VKMA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+      "keyword_match_rate": 0.0,
+      "retrieved_context": true
+    },
+    {
+      "query": "What is the most popular product?",
+      "category": "Product Analysis",
+      "success": false,
+      "time": 4.2389795780181885,
+      "answer": "\ud83e\udd16 AI service temporarily unavailable. Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************VKMA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+      "keyword_match_rate": 0.0,
+      "retrieved_context": true
+    },
+    {
+      "query": "Where are my top customers located?",
+      "category": "Geographic Analysis",
+      "success": false,
+      "time": 4.244129657745361,
+      "answer": "\ud83e\udd16 AI service temporarily unavailable. Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************VKMA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+      "keyword_match_rate": 0.0,
+      "retrieved_context": true
+    },
+    {
+      "query": "Tell me about quantum physics",
+      "category": "Out of Scope",
+      "success": false,
+      "time": 4.241003513336182,
+      "answer": "\ud83e\udd16 AI service temporarily unavailable. Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************VKMA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+      "keyword_match_rate": 1.0,
+      "retrieved_context": true
+    },
+    {
+      "query": "sales",
+      "category": "Vague Query",
+      "success": false,
+      "time": 4.231184005737305,
+      "answer": "\ud83e\udd16 AI service temporarily unavailable. Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************VKMA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+      "keyword_match_rate": 0.0,
+      "retrieved_context": true
+    }
+  ],
+  "metrics": {
+    "overview": {
+      "total_queries": 9,
+      "queries_with_results": 0,
+      "success_rate": "0.0%",
+      "avg_retrieval_time": "0.873s",
+      "avg_chunks_retrieved": "0.0",
+      "avg_rerank_score": "N/A"
+    },
+    "caching": {
+      "cache_hits": 0,
+      "cache_misses": 9,
+      "hit_rate": "0.0%"
+    },
+    "feature_usage": {
+      "reranking": {
+        "used": 0,
+        "percentage": "0.0%"
+      },
+      "query_expansion": {
+        "used": 0,
+        "percentage": "0.0%"
+      },
+      "hybrid_search": {
+        "used": 0,
+        "percentage": "0.0%"
+      },
+      "relevance_filtering": {
+        "used": 9,
+        "percentage": "100.0%"
+      }
+    },
+    "quality_scores": []
+  }
+}

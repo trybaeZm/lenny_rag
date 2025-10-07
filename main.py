@@ -625,6 +625,7 @@ def fetch_chat_history_messages(user_id: str, session_id: str, limit: int = 8):
 
 # === Gemini Logic ===
 def query_rag_ai(user_id, user_query, user_name=None, file_context=None, session_id=None):
+    print(f'endpoint hit : {OPENAI_API_KEY}')
     user_data = fetch_sales_data(user_id)
     if not user_data:
         return "❌ No business data found."

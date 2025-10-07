@@ -1,0 +1,25 @@
+options:
+  logging: CLOUD_LOGGING_ONLY
+
+steps:
+  # 1. Install dependencies
+  - name: 'python:3.11'
+    id: 'Install dependencies'
+    entrypoint: 'pip'
+    args:
+      - 'install'
+      - '-r'
+      - 'requirements.txt'
+
+  # 2. Deploy to Cloud Run
+  - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+    id: 'Deploy to Cloud Run'
+    entrypoint: 'bash'
+    args:
+      - '-c'
+      - |
+        gcloud run deploy ai-service \
+          --platform managed \
+          --region europe-west4 \
+          --allow-unauthenticated \
+          --source .
