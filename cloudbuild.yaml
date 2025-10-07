@@ -5,8 +5,9 @@ steps:
   # 1. Install dependencies
   - name: 'python:3.11'
     id: 'Install dependencies'
-    entrypoint: 'pip'
+    entrypoint: 'python'
     args:
+      - 'pip'
       - 'install'
       - '-r'
       - 'requirements.txt'
